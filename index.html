@@ -1,0 +1,91 @@
+<!-- htmlคือโครงสร้างการเขียนเว็บ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- tagmetaคือการกำหนดรูปแบบอักระอย่างเช่นการกำหนดสัดส่วนของหน้าจอ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บเขียนโปรแกรม">
+    <meta name="author" content="jark m">
+    <meta name="keyword" content="html css js">
+    <title>comein</title>
+    <style>
+        .d {
+            color: red;
+            font-size: 20px;
+        }
+
+        #d {
+            color: wheat;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>htmlเบื้องต้น</div>
+    <!-- href เป็นการอ้างอิงสิ่งที่เราเข้า -->
+    <a href="http://www.google.com " target="_blank">เปิดgoogle</a>
+    <!-- paragraphs คือจุดเริมการเขียนข้อความจะขึ้นบรรทัดใหม่เสมอ -->
+    <p>ข้อมูล</p>
+    <!-- ไว้ใช้ขึ้นบรรทัดใหม่ -->
+    <br>
+    <!-- ไว้ใช้ขีดเส้นคั้น -->
+    <hr>
+    <!-- href เป็นการอ้างอิงสิ่งที่เราเข้าและสามารถเข้าไปหน้าต่างๆได้ -->
+    <a href="shoping/shop.html">หน้าซื้อขาย</a>
+    <!-- img เป็นการเป็นการเพิ่มรูปภาพต่างๆ -->
+    <img src="https://cdn.pixabay.com/photo/2023/11/15/12/27/seagull-8389939_1280.jpg" alt=""
+        style="width: 100px;height: 100px;">
+    <!-- video เป็นการเป็นการเพิ่มวิดีโอต่างๆ -->
+    <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+    </video>
+    <!-- iframe เป็นการเป็นการเพิ่มวิดีโอต่างๆผ่านเว็บไซต์ -->
+    <iframe src="https://www.youtube.com/embed/0hfeNPM7piw?si=vJkkug8dUNK5nDq3" frameborder="0"></iframe>
+    <!-- audio เป็นการเป็นการเพิ่มเสียงต่างๆ -->
+    <audio src=""></audio>
+    <!-- listเอาไว้เรียงลำดับ -->
+    <ol>
+        <li>
+            ปลา
+        </li>
+        <li>
+            กุ้ง
+        </li>
+    </ol>
+    <!-- tb คือตารางเอาไว้สร้างตารางต่างๆ thead หัวตาราง tbody ตัวตาราง tfoot ท้าย tr แถว td คอลัมน์ th คอลัมน์ส่วนบน -->
+    <table>
+        <!-- bgcolor คือสี -->
+        <tr bgcolor="pink">
+            <td>Cell A</td>
+            <td>Cell B</td>
+        </tr>
+        <tr>
+            <td>Cell C</td>
+            <td>Cell D</td>
+        </tr>
+    </table>
+    <!-- spanคือใช้จัดกลุ่มข้อความต่างๆอยู่ในแถวเดียว -->
+    <span>ม้า</span>
+    <!-- divคือใช้จัดกลุ่มข้อความต่างๆโดยขึ้นบรรทัดใหม่ -->
+    <div>หมู</div>
+    <!-- คือหน้าต่างที่ผูใช้ไว้ใส่ข้อมูลต่างและยังส่งข้อมูลต่างได้ -->
+    <form action="">
+
+        <input type="text"> กล่องข้อความ</input>
+        <select name="" id="">แสดงตัวเลือก (dropdown)</select>
+        <option value="">สร้างตัวเลือก</option>
+        <label for="">ป้ายชื่อช่องรับข้อมูล</label>
+        <textarea name="" id="" cols="30" rows="10">กล่องข้อมูลหลายบรรทัด</textarea>
+
+        <input type="submit"> ปุ่มบันทึก</input>
+    </form>
+    <!-- class=. การประกาศค่า attribute ในแท็กที่ต้องการ -->
+    <div class="d">มังกร</div>
+    <!-- id=# เป็นรหัสเฉพาะของแท็กด้วยการประกาศค่าด้วย ID -->
+    <div id="d">งู</div>
+</body>
+
+</html>

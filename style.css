@@ -1,0 +1,83 @@
+/* external */
+h1 {
+    color: red;
+}
+
+.d {
+    color: red;
+    font-size: 20px;
+}
+
+#d {
+    color: wheat;
+    font-size: 20px;
+}
+
+/* *{
+แท็ก * สามารถใช้ได้ทุกตัว
+} */
+
+/* font-family คือการกำหนดฟอนต์ */
+.d {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* font-size คือการกำหนดขนาดฟอนต์ */
+.d {
+    font-size: 20px;
+    /* ขีดเส้นใต้ */
+    text-decoration: dashed;
+    /* กำหนดตำแหน่ง */
+    text-align: center;
+
+    /* กำหนดความสูงกว้าง */
+    width: 100px;
+    height: 100px;
+    /* กำหนดขนาดเส้นขอบ */
+    border: 2px;
+    /* กำหนดกล่องด้านนอก */
+    margin: auto;
+    /* กำหนดกล่องด้านใน */
+    padding: auto;
+
+    /* สีพื้นหลัง */
+    background-color: aliceblue;
+    /* รูปพื้นหลัง */
+    background-image: none;
+    /* การกำหนดตำแหน่งของ content */
+    float: left;
+}
+/* a:link  ที่ยังไม่ถูกคลิก
+a:hover เมื่อนำเมาส์ไปวาง
+a:visited ที่ถูกคลิกแล้ว
+a:active ขณะถูกคลิก */
+/* 
+display คือจัดรูปแบบแสดงข้อมูล
+ืnone ไม่แสดง
+block แสดงขึ้นบรรทัดใหม่
+inline แสดงแต่ไม่ขึ้น
+inlineblock แสดงและขยายพื้นด้านใน*/
+
+/* visibility คือการแสดงหรือซ่อน
+้hidden ซ่อน
+visible แสดง */
+
+
+/* position จัดตำแหน่ง
+static จัดค่าเดิม
+relative วางวัตถุแล้วกำหนดตำแหน่งได้
+absolute วางวัตถุ ให้ไปอยู่ตำแหน่งไหนก็ได้
+fixed ใช้ในการจัดวางวัตุให้อยู่ตำแหน่งเดิม
+sticky ให้วัตถุติดขอบตลอด */
+
+/* impotant กำหนดวัตุนี้เป็นหลัก */
+
+/* overflow คือการจัดข้อมูลให้อยู่ในสัดส่น
+visible แสดงทั้งหมด
+hidden ซ่อน
+scroll ให้แทบเลื่อนออกมา
+auto ให้แทบเลื่อนออกมาอัตโนมัติ */
+
+/* boxshadow แร่เงา */
+
+/* opacity ความทึบวัตุ */
