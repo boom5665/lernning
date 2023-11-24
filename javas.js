@@ -13,7 +13,7 @@ document.write("<h1>boom</h1>");
 let money_two = 500;
 // แปลงค่าเป็นnumberเป็นstring
 let price = 99.99.toString();
-let massage = "boom";
+// let massage = "boom";
 let name_two = "boomboom"
 // แปลงค่าเป็นstringgเป็นnumber
 // let age = parseInt("20.15");
@@ -153,5 +153,117 @@ for (count = 1; count <= 5; count++) {
 while (true) {
     if (count == 200) break;
     count++;
-    console.log(count);
+    // cog(count);onsole.l
 }
+
+// function การใช้งาน
+
+function massage(){
+    alert("แจ้งเตือนโอน")
+}
+
+// function การรับค่า
+function fullname(fname,lname,city){
+    console.log("ชื่อจริง =",fname,"นามสกุล =",lname,"ที่อยู่ =",city)
+}
+
+// function ส่งค่า
+
+function getComputeIP(){
+    return "127.0.0.1"
+}
+function getnumber(){
+    return 100*100
+}
+function getaddress(){
+    let city="ระยอง";
+    return city
+}
+let myIp=getComputeIP();
+// let total = getnumber();
+// console.log(myIp);
+// console.log(total);
+// console.log(getaddress());
+//รับและส่ง
+function setSalary(salary){
+    let bonus= 1000;
+    return salary+bonus;
+}
+let total = setSalary(15000);
+// console.log(total);
+
+// ขอบเขตตัวแปร
+// local variable ตัวแปรที่ทำงานในฟังชั่น
+// global variable ตัวแปรที่ทำงานอยู่นอกฟังชั่น
+
+let a = 100;
+function display(){
+    let a = 50;
+    console.log('ตัวแปร =', a);
+    console.log('ค่าอื่นๆ =', a);
+}
+console.log('global =', a);
+console.log('logal =', a);
+display()
+
+// Array propertie function &sort
+let colors_two =["แดง" ,'เขียว', "ขาว", "ฟ้า", "ม่วง"]
+// console.log(colors_two.sort());
+
+// Array forloop & push
+let colors_three =["แดง" ,'เขียว', "ขาว", "ฟ้า", "ม่วง"];
+colors_three.push("ดำ");
+for (let i = 0; i < colors_three.length; i++) {
+    // const element = array[index];
+    // console.log((i+1),colors_three[i]);
+    
+}
+
+// Array foreach
+
+let colors_four =["แดง" ,'เขียว', "ขาว", "ฟ้า", "ม่วง"];
+colors_four.forEach(myData);
+function myData(item)
+{
+console.log("สี",item)
+}
+
+// แปลง Array เป็น String
+// toString() แปลงString
+// join นำค่าใน Arrayมาเป็นข้อความตัวคั่น
+// pop()เอาลบตัวท้ายสุด
+// การรวม array
+let z =["แดง" ,'เขียว', ];
+let m =["แรด" ,'ช้าง', ];
+
+ z=z.concat(m)
+ console.log("รวม",z)
+
+//  เรียงลำดับ array
+let point=[20,10,5,9,8,100]
+
+point.sort(function(a,b)
+{
+    return a-b
+});
+console.log(point);
+// 1.if else คำสั่งที่จะกำหนดเงื่อนไข true false เป็นตัวกำหนด
+// ถ้าเป็น true จะเข้าเงื่อนไข เป็น false จะเข้า else แต่ถ้าไม่มีจะไม่ทำ
+// 2.switch case คำสังที่ทำงานได้หลายแบบ คล้าย if แต่ จะจำกัดกว่า
+// จะทำการเปรียบเทียบกันมากกว่าการใช้ Boolean
+// 3.loop การทำซ้ำกะนหลายๆรอบจนกว่าเงื่อนไขนั้นจะทำการหยุด
+// 4.Function คือเป็นชุดคำสั่งที่นำมาใช่ส่งหรือรับข้อมูลสามารถใช่ได้หลายตัวพร้อมๆกันได้
+
+
+// object
+let product ={
+    name: "guy",
+    price: 1000,
+    color : "black",
+    category:"computer",
+    size:"L",
+    displayproduct:function () {
+        return "ชือสินค้า = " + product.name + " ราคา = " + product.price + " หมวดหมู่ = " + product.category
+    }
+}
+document.write(product.displayproduct());
