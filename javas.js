@@ -264,6 +264,17 @@ let product ={
     size:"L",
     displayproduct:function () {
         return "ชือสินค้า = " + product.name + " ราคา = " + product.price + " หมวดหมู่ = " + product.category
+    },
+    discount:function(){
+        return this.price - 1000;
     }
 }
+
 document.write(product.displayproduct());
+
+
+
+// document.getElementById ชื่อไอดี
+// document.getElementsByTagName ชื่อแท็ก
+// document.getElementsByName ชื่อคลาส
+
