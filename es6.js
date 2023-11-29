@@ -101,7 +101,36 @@ console.log(getdatacustomer("boom"));
 // indexof = ผลการค้นหาตำแหน่ง i ทีค้นเจอถ้าไม่เจอลย -1
 // find =  ผลการค้นหาตำแหน่งข้อมูล ไม่เจอ undefined
 // findindex = ผลการค้นหาจะได้ตำแหน่ง i ถ้าไม่เจอจะ -1
-const data=[10,20,30,40,50]
+// const colors = ["แดง","เหลือง","เขียว","ดำ","ฟ้า"]
 
-const index= num.indexof(20)
-console.log(index);
+// const index = colors.indexOf("แดง")
+// const index = colors.find(e=>e==="แดง")
+// const index = colors.findIndex(e=>e==="แดง")
+// console.log(index);
+
+// array map
+// const numbers = [10,20,30,40,50]
+
+// const result = numbers.map(e=>{
+//     const a= e*2
+//     return a
+// })
+// console.log(`array map = ${result}`);
+// Array filter
+// const data = [10,20,30,40,50]
+
+// const result = data.filter(e=>{
+// return e>20
+// })
+
+// console.log(result);
+
+// Array reduce
+const data = [10,20,30,40,50]
+const sum=data.reduce((value,e)=>{
+ console.log(value);
+ const total=e+value
+ return total
+},0)
+
+console.log(sum);
